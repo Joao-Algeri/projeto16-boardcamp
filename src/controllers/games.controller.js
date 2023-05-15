@@ -1,4 +1,4 @@
-import { db } from '../configs/database.js'
+import { db } from '../database/db.js'
 
 export async function getGames(req, res) {
   try {
