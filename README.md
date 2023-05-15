@@ -1,1 +1,1 @@
-# projeto16-boardcamp
+Back-end of the Boardcamp project

@@ -15,7 +15,7 @@ export async function insertGames(req, res) {
 
   try {
     await db.query(`
-    INSERT INTO games (name, image, "stockTotal", "pricePerDay") VALUES ($1, $2, $3, $4);`, [name, image, stockTotal, pricePerDay])
+    INSERT INTO games (name,"stockTotal","pricePerDay", image ) VALUES ($1, $2, $3, $4);`, [name, stockTotal,pricePerDay, image ])
     res.sendStatus(201)
   } catch (error) {
     res.status(500).send(error.message)
